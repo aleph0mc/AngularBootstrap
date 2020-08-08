@@ -18,7 +18,7 @@ export class AlertComponent implements OnInit {
       false,
       'flipx',
       'The Title',
-      'This is alert is with settings'
+      'This alert is with settings'
     );
   }
 
