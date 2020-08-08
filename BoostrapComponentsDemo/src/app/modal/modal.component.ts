@@ -1,4 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+
+// To download ngx-bootstrap in the angular project folder run:
+// ng add ngx-bootstrap
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
