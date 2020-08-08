@@ -1,3 +1,22 @@
-<p>
-  alert works!
-</p>
+<div class="container">
+  <h1>Alerts</h1>
+
+  <div class="row row-cols-5">
+    <div class="col">
+      <button type="button" class="btn btn-primary" (click)='showConfirm()'>Show Confirm</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-danger" (click)='showError()'>Show Error</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-success" (click)='showSuccess()'>Show Success</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-warning" (click)='showWarning()'>Show Warning</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-info" (click)='showWithSettings()'>Show Alert</button>
+    </div>
+  </div>
+
+</div>
