@@ -7,6 +7,7 @@ import { ModalComponent } from './modal/modal.component';
 import { TableComponent } from './table/table.component';
 import { AlertComponent } from './alert/alert.component';
 import { ScrollspyComponent } from './scrollspy/scrollspy.component';
+import { TabsetComponent } from './tabset/tabset.component';
 
 const routes: Routes = [
   {
@@ -40,7 +41,10 @@ const routes: Routes = [
         path: 'scrollspy',
         component: ScrollspyComponent,
       },
-    ],
+      {
+        path: 'tabset',
+        component: TabsetComponent,
+      }  ],
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

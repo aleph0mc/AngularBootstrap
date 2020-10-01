@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
 // services
 import { AlertifyService } from './_services/alertify.service';
 
@@ -20,6 +20,7 @@ import { TableComponent } from './table/table.component';
 import { AlertComponent } from './alert/alert.component';
 import { ScrollspyComponent } from './scrollspy/scrollspy.component';
 import { LoremIpsumComponent } from './scrollspy/lorem-ipsum.component';
+import { TabsetComponent } from './tabset/tabset.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,14 @@ import { LoremIpsumComponent } from './scrollspy/lorem-ipsum.component';
     ScrollspyComponent,
     ScrollspyDirective,
     LoremIpsumComponent,
+    TabsetComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
+    TabsModule.forRoot(),
   ],
   providers: [AlertifyService],
   bootstrap: [AppComponent],
