@@ -4,6 +4,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 // services
 import { AlertifyService } from './_services/alertify.service';
 
@@ -43,6 +45,7 @@ import { TabsetComponent } from './tabset/tabset.component';
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     TabsModule.forRoot(),
+    TooltipModule.forRoot(),
   ],
   providers: [AlertifyService],
   bootstrap: [AppComponent],
