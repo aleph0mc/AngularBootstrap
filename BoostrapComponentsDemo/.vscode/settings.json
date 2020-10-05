@@ -1,5 +1,4 @@
 {
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.enablePreview": false,
-    "github.gitAuthentication": false
+    "workbench.editor.enablePreview": false
 }
