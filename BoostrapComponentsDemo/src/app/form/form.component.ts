@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { UtilitiesService } from '../_services/utilities.service';
 
 @Component({
   selector: 'app-form',
@@ -15,7 +16,7 @@ export class FormComponent implements OnInit {
     { name: 'Turin', value: 4 },
   ];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private utilities: UtilitiesService) {}
 
   ngOnInit(): void {
     this.initializeReactiveForm();
@@ -30,6 +31,7 @@ export class FormComponent implements OnInit {
 
   submitForm(): void {
     console.log('ddlValue' + this.reactiveForm.get('ddlSelected').value);
-    console.log(this.reactiveForm.get('dateDMY').value);
+    const dateMDY = this.reactiveForm.get('dateDMY').value;
+    console.log(this.utilities.customDateFormat(dateMDY));
   }
 }

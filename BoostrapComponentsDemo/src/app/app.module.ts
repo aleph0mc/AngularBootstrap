@@ -15,6 +15,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 // services
 import { AlertifyService } from './_services/alertify.service';
+import { UtilitiesService } from './_services/utilities.service';
 
 import { ScrollspyDirective } from './scrollspy/scrollspy.directive';
 
@@ -58,7 +59,7 @@ import { TabsetComponent } from './tabset/tabset.component';
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
   ],
-  providers: [AlertifyService],
+  providers: [AlertifyService, UtilitiesService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
