@@ -15,4 +15,8 @@ export class TabsetComponent implements OnInit {
   disableEnable(): void {
     this.staticTabs.tabs[2].disabled = !this.staticTabs.tabs[2].disabled;
   }
+
+  activateTabId3(): void {
+    this.staticTabs.tabs[3].active = true;
+  }
 }
